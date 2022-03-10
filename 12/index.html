@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+	</head>
+<body>
+</br>
+<b><font size="5">Effect of Pitch/Energy/Duration</font></b>
+</br>
+</br>
+
+
+
+<table style="width:100%">
+  <tr>
+    <th>No</th>    
+	<th>Refernce</th>
+    <th>Base Model (FastSpeech2+Speaker embedding)</th>
+	<th>B.M.+ Pitch</th>
+	<th>B.M.+ Energy</th>
+	<th>B.M.+ Duration</th>
+	<th>B.M.+ Pitch + Energy</th>
+	<th>B.M.+ Pitch + Duration</th>
+	<th>B.M.+ Energy + Duration</th>
+	<th>B.M.+ Pitch + Energy +Duration </th>
+	<th>FastSpeech2+VAE+Embedding+GR</th>
+
+  </tr>
+
+
+
+  <tr>
+	<td><center><b>sample(1): sad</b></center><center></td>
+    <td><center><audio controls><source src="./spk11-3/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk11-3/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk11-3/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk11-3/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk11-3/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk11-3/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk11-3/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk11-3/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk11-3/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk11-3/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk11-3/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk11-3/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk11-3/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+
+
+  <tr>
+	<td><center><b>sample(2): happy</b></center><center></td>
+    <td><center><audio controls><source src="./spk12-1/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk12-1/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk12-1/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk12-1/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk12-1/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk12-1/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk12-1/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk12-1/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk12-1/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk12-1/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk12-1/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk12-1/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk12-1/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(3): happy</b></center><center></td>
+    <td><center><audio controls><source src="./spk13-1/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk13-1/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk13-1/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk13-1/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk13-1/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk13-1/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk13-1/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk13-1/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk13-1/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk13-1/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk13-1/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk13-1/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk13-1/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(4): angry</b></center><center></td>
+    <td><center><audio controls><source src="./spk14-2/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk14-2/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk14-2/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk14-2/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk14-2/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk14-2/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk14-2/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk14-2/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk14-2/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk14-2/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk14-2/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk14-2/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk14-2/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+
+  <tr>
+	<td><center><b>sample(5): angry</b></center><center></td>
+    <td><center><audio controls><source src="./spk15-2/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk15-2/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk15-2/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk15-2/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk15-2/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk15-2/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk15-2/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk15-2/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk15-2/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk15-2/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk15-2/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk15-2/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk15-2/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(6): surprised</b></center><center></td>
+    <td><center><audio controls><source src="./spk16-4/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk16-4/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk16-4/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk16-4/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk16-4/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk16-4/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk16-4/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk16-4/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk16-4/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk16-4/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk16-4/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk16-4/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk16-4/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(7): surprised</b></center><center></td>
+    <td><center><audio controls><source src="./spk17-4/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk17-4/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk17-4/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk17-4/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk17-4/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk17-4/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk17-4/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk17-4/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk17-4/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk17-4/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk17-4/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk17-4/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk17-4/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+
+
+  <tr>
+	<td><center><b>sample(8): sad</b></center><center></td>
+    <td><center><audio controls><source src="./spk18-3/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk18-3/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk18-3/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk18-3/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk18-3/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk18-3/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk18-3/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk18-3/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk18-3/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk18-3/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk18-3/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk18-3/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk18-3/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(9): surprised</b></center><center></td>
+    <td><center><audio controls><source src="./spk19-4/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk19-4/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk19-4/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk19-4/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk19-4/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk19-4/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk19-4/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk19-4/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk19-4/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk19-4/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk19-4/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk19-4/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk19-4/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+  <tr>
+	<td><center><b>sample(10): sad</b></center><center></td>
+    <td><center><audio controls><source src="./spk20-3/ref.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spk20-3/no.wav"></audio></center></td> 
+	<td><center><audio controls><source src="./spk20-3/p.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spk20-3/e.wav"></audio></center></td>	
+    <td><center><audio controls><source src="./spk20-3/d.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk20-3/pe.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk20-3/pd.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk20-3/ed.wav"></audio></center></td>
+    <td><center><audio controls><source src="./spk20-3/ped.wav"></audio></center></td>   
+    <td><center><audio controls><source src="./spk20-3/bl.wav"></audio></center></td>
+ </tr> 	
+ <tr>
+ 	<td><center><b>charts:</b></center><center></td>
+	<td><center><a href="" onclick="window.open('./spk20-3/ref.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+	
+	<td><center><a href="" onclick="window.open('./spk20-3/no.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/p.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/e.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/d.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/pe.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/pd.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/ed.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/ped.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./spk20-3/bl.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+ </tr> 
+
+
+
+  
+</table>
+
+
+
+
+</body>
+</html>
