@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+	</head>
+<body>
+</br>
+<b><font size="5">Comparision samples from Fastspeech2 with GSTs and VAE   (Blizzard dataset)</font></b>
+</br>
+</br>
+
+<b><font size="4" color = "red" >Parallel style transfer:</font></b>
+
+
+<table style="width:100%">
+
+  <tr>
+    <th>No</th>
+    <th>Reference sample</th>
+    <th>Fastspeech2 with GSTs</th>	
+    <th>Fastspeech2 with VAE</th>
+    <!--<th>VC from synthetic wave(fastspeech2+noVAE)</th>-->
+  </tr>
+
+ 
+ 
+  <tr>
+	<td><center><b>1</b></center><center></td>
+    <td><center><audio controls><source src="./parallel/CB-EM-09-158.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/gst-CB-EM-09-158.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/vae-CB-EM-09-158.wav"></audio></center></td>				
+	
+  </tr> 
+
+  <tr>
+	<td><center><b>2</b></center><center></td>
+    <td><center><audio controls><source src="./parallel/CB-EM-18-134.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/gst-CB-EM-18-134.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/vae-CB-EM-18-134.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>3</b></center><center></td>
+    <td><center><audio controls><source src="./parallel/CB-EM-21-247.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/gst-CB-EM-21-247.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/vae-CB-EM-21-247.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>4</b></center><center></td>
+    <td><center><audio controls><source src="./parallel/CB-LCL-01-192.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/gst-CB-LCL-01-192.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/vae-CB-LCL-01-192.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>5</b></center><center></td>
+    <td><center><audio controls><source src="./parallel/CB-LCL-03-48.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/gst-CB-LCL-03-48.wav"></audio></center></td>
+	<td><center><audio controls><source src="./parallel/vae-CB-LCL-03-48.wav"></audio></center></td>				
+	
+  </tr>
+
+
+</table>
+
+
+
+
+</br>
+<b><font size="4" color = "red" >Non Parallel style transfer:</font></b>
+</br>
+
+<table style="width:100%">
+
+  <tr>
+    <th>No</th>
+    <th>Reference sample</th>
+    <th>Fastspeech2 with GSTs</th>	
+    <th>Fastspeech2 with VAE</th>
+    <!--<th>VC from synthetic wave(fastspeech2+noVAE)</th>-->
+  </tr>
+
+ 
+   <tr>
+	<td><center><b>0</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/original-CB-EM-30-73.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-EM-30-73.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-EM-30-73.wav"></audio></center></td>				
+	
+  </tr>
+ 
+ 
+  <tr>
+	<td><center><b>1</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/CB-EM-09-158.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-EM-09-158.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-EM-09-158.wav"></audio></center></td>				
+	
+  </tr> 
+
+  <tr>
+	<td><center><b>2</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/CB-EM-18-134.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-EM-18-134.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-EM-18-134.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>3</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/CB-EM-21-247.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-EM-21-247.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-EM-21-247.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>4</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/CB-LCL-01-192.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-LCL-01-192.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-LCL-01-192.wav"></audio></center></td>				
+	
+  </tr>
+    <tr>
+	<td><center><b>5</b></center><center></td>
+    <td><center><audio controls><source src="./non-parallel/CB-LCL-03-48.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/gst-CB-LCL-03-48.wav"></audio></center></td>
+	<td><center><audio controls><source src="./non-parallel/vae-CB-LCL-03-48.wav"></audio></center></td>				
+	
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+</body>
+</html>
