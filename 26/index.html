@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+	</head>
+<body>
+</br>
+<b><font size="5">Samples from world vocoder with pitch replacment  </font></b>
+</br>
+</br>
+<table style="width:100%">
+  <tr>
+    <th>Input Neutral</th>
+	<th>Angry </th>
+    <th>Happy</th> 
+	<th>Sad</th>
+	<th>Surprised</th>
+    <!--<th>VC from synthetic wave(fastspeech2+noVAE)</th>-->
+  </tr>
+
+ 
+  <tr>
+	
+    <td><center><audio controls><source src="./samples/0017_neutral.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_angry.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_happy.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_sad.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_surprised.wav"></audio></center></td>	
+  </tr>  
+
+
+
+  <tr>
+	<td><center><b>after pitch replace</b></center><center></td>
+    <td><center><audio controls><source src="./samples/neutral-with-angry-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/neutral-with-happy-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/neutral-with-sad-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/neutral-with-surprised-pitch.wav"></audio></center></td>	
+		
+  </tr>
+
+
+  
+</table>
+
+
+<table style="width:100%">
+  <tr>
+    <th>input Baseline</th>
+	<th>Angry </th>
+    <th>Happy</th> 
+	<th>Sad</th>
+	<th>Surprised</th>
+    <!--<th>VC from synthetic wave(fastspeech2+noVAE)</th>-->
+  </tr>
+
+ 
+  <tr>
+	
+    <td><center><audio controls><source src="./samples/spk17-bl.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_angry.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_happy.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_sad.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/0017_surprised.wav"></audio></center></td>	
+  </tr>  
+
+
+
+  <tr>
+	<td><center><b>after pitch replace</b></center><center></td>
+    <td><center><audio controls><source src="./samples/bl-with-angry-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/bl-with-happy-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/bl-with-sad-pitch.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./samples/bl-with-surprised-pitch.wav"></audio></center></td>	
+		
+  </tr>
+
+
+  
+</table>
+
+
+
+
+
+</body>
+</html>
