@@ -9,7 +9,7 @@ table, th, td {
 	</head>
 <body>
 </br>
-<b><font size="5">Samples from Fastspeech2+VAE where predicted pitch rplaced with GT pitch</font></b>
+<b><font size="5">Samples from baseline model in which pitch are replaced GT pitch </font></b>
 </br>
 </br>
 
@@ -21,8 +21,8 @@ table, th, td {
 
   <tr>
     <th>Emotion</th>	
-	<th>GT</th>
-	<th>Fastspeech++VAE+2embedding</th>	
+	<th>Reference (GT)</th>
+	<th>Fastspeech++VAE+2embedding (GT duration)</th>	
 	<th>With GT pitch</th>
 
 	
@@ -34,56 +34,66 @@ table, th, td {
  
   <tr>
 	<td><center><b> Angry</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_000374.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/spk17-emo2-ref-angry_generated.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/wv-spk17-emo2-ref-angry_generated.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_000378_2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/spk17-ref-angry-emo2_generated.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/wv-spk17-ref-angry-emo2_generated.wav"></audio></center></td>
 
   </tr> 
 
 
   <tr>
 	<td><center><b> Happy</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_000724.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/spk17-emo1-ref-happy_generated.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/wv-spk17-emo1-ref-happy_generated.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_000728_2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/spk17-ref-happy-emo1_generated.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/wv-spk17-ref-happy-emo1_generated.wav"></audio></center></td>
 
   </tr>
  
   <tr>
 	<td><center><b> Sad</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_001074.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/spk17-emo3-ref-sad_generated.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/wv-spk17-emo3-ref-sad_generated.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_001078_2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/spk17-ref-sad-emo3_generated.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/wv-spk17-ref-sad-emo3_generated.wav"></audio></center></td>
 
   </tr> 
   
     <tr>
 	<td><center><b> Surprised</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_001424.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/spk17-emo4-ref-surprised_generated.wav"></audio></center></td>
-	<td><center><audio controls><source src="./samples/wv-spk17-emo4-ref-surprised_generated.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_001428_2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/spk17-ref-surprised-emo4_generated.wav"></audio></center></td>
+	<td><center><audio controls><source src="./samples/wv-spk17-ref-surprised-emo4_generated.wav"></audio></center></td>
 
   </tr>
   
-  
+</table>
 
+
+
+<b>
+<b>
+<b>
+</br>
+</br>
+</br>
 
 <table style="width:100%">
 
   <tr>
     <th>Emotion</th>	
-
-	<th>GT</th>
-	<th>Fastspeech++VAE+Speaker embedding</th>	
+	<th>Reference (GT)</th>
+	<th>Fastspeech+VAE+Speaker embedding (GT duration)</th>	
 	<th>With GT pitch</th>
 
+	
+	
+    <!--<th>VC from synthetic wave(fastspeech2+noVAE)</th>-->
   </tr>
 
  
   
   <tr>
 	<td><center><b> Angry</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_000374.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_000378_2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/spk17-ref-angry_generated.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/wv-spk17-ref-angry_generated.wav"></audio></center></td>
 
@@ -92,7 +102,7 @@ table, th, td {
 
   <tr>
 	<td><center><b> Happy</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_000724.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_000728_2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/spk17-ref-happy_generated.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/wv-spk17-ref-happy_generated.wav"></audio></center></td>
 
@@ -100,7 +110,7 @@ table, th, td {
  
   <tr>
 	<td><center><b> Sad</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_001074.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_001078_2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/spk17-ref-sad_generated.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/wv-spk17-ref-sad_generated.wav"></audio></center></td>
 
@@ -108,7 +118,7 @@ table, th, td {
   
     <tr>
 	<td><center><b> Surprised</b></center><center></td>
-    <td><center><audio controls><source src="./samples/0017_001424.wav"></audio></center></td>
+    <td><center><audio controls><source src="./samples/0017_001428_2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/spk17-ref-surprised_generated.wav"></audio></center></td>
 	<td><center><audio controls><source src="./samples/wv-spk17-ref-surprised_generated.wav"></audio></center></td>
 
