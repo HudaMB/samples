@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	table, th, td {	border: 1px solid black;}
+	</style>
+	</head>
+<body>
+
+</br>
+<b><font size="5">Paper title: Enhancing Emotional Speech Synthesis with Voice Conversion </font></b>
+</br>
+</br>
+</br>
+<b><font size="4"><b><u>Samples:</font></b></u>
+</br>
+</br>
+<b><font size="3"><b>Model A: FastSpeech2 + VAE +Speaker embedding with GRL</font></b></br>
+<b><font size="3"><b>Model B: FastSpeech2 + VAE +Speaker & Emotion embedding with GRL</font></b></br>
+<b><font size="3"><b>Model C: FastSpeech2 + Speaker & Emotion embedding</font></b></br>
+</br>
+</br>
+
+<b><font size="4" color = "red" ><b><u>Emotion: Surprised</font></b></br></u>
+ 
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+    <th style="border: none"></th>
+	<th style="border: none">GT</th>
+    <th style="border: none">Model A</th>
+    <th style="border: none">Model B</th>
+    <th style="border: none">Model C</th>
+  </tr>
+  
+  
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/1.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/1.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/1.wav"></audio></center></td>	
+ </tr>  
+ </table>
+ </br>
+</br>
+ <table style="border-collapse: collapse; border: none; width:100%">
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/2.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/2.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/2.wav"></audio></center></td>
+  </tr>  
+</table>  
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/3.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/3.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/3.wav"></audio></center></td>
+  </tr>
+</table>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/4.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/4.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/4.wav"></audio></center></td>
+  </tr>
+</table>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/5.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/5.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/5.wav"></audio></center></td>
+  </tr>
+  </table>
+</br>
+</br>
+
+ <table style="border-collapse: collapse; border: none; width:100%"> 
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/6.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/6.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/6.wav"></audio></center></td>
+  </tr>  
+</table>
+</br>
+</br>
+ <table style="border-collapse: collapse; border: none; width:100%"> 
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/7.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/7.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/7.wav"></audio></center></td>
+  </tr>  
+  </table>
+ </br>
+</br> 
+ <table style="border-collapse: collapse; border: none; width:100%">   
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/8.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/8.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/8.wav"></audio></center></td>
+  </tr>  
+  </table>
+ </br>
+</br> 
+ <table style="border-collapse: collapse; border: none; width:100%">   
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/9.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/9.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/9.wav"></audio></center></td>
+  </tr>  
+ </table> 
+ </br>
+</br>
+
+ <table style="border-collapse: collapse; border: none; width:100%"> 
+  <tr style="border: none">
+	<td style="border: none"><center><b>Without VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C/10.wav"></audio></center></td>
+  </tr>  
+  <tr style="border: none">
+	<td style="border: none"><center><b>With VC</b></center><center></td>
+	<td style="border: none"><center><audio controls><source src="./org/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./A-VC/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./B-VC/10.wav"></audio></center></td>
+	<td style="border: none"><center><audio controls><source src="./C-VC/10.wav"></audio></center></td>
+  </tr>   
+
+</table>
+
+
+</body>
+</html>
