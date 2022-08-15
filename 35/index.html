@@ -15,7 +15,7 @@
 <b><font size="3"><b>Baseline model: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
 <b><font size="3"><b>Model 1:        Weight of adversarial loss=0.5, Discriminator trained every 200 iterations</font></b></br>
 <b><font size="3"><b>Model 2:        Weight of adversarial loss=0.5, Discriminator trained every 1 epoch, weights initilized, encoder freezed</font></b></br>
-<b><font size="3"><b>Model 3:        Weight of adversarial loss is adaptive with coefficient 0.01, , Discriminator trained every 200 iterations, Duration predictor less complex, Pitch and duration loss *2</font></b></br>
+<b><font size="3"><b>Model 3:        Weight of adversarial loss is adaptive with coefficient 0.01, , Discriminator trained every 200 iterations, Pitch and duration loss *2 (Frame level)</font></b></br>
 </br>
 </br>
 
@@ -40,7 +40,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk17-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk17-emo1.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk17-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk17-emo1.wav"></audio></center></td>
   </tr>  
   
   <tr>	
@@ -48,7 +48,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk17-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk17-emo2.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk17-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk17-emo2.wav"></audio></center></td>
   </tr>
 
 
@@ -57,7 +57,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk17-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk17-emo3.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk17-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk17-emo3.wav"></audio></center></td>
   </tr>  
  
 
@@ -66,7 +66,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk17-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk17-emo4.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk17-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk17-emo4.wav"></audio></center></td>
   </tr>
 </table>
 
@@ -92,7 +92,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk20-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk20-emo1.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk20-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk20-emo1.wav"></audio></center></td>
   </tr>  
   
   <tr>	
@@ -100,7 +100,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk20-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk20-emo2.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk20-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk20-emo2.wav"></audio></center></td>
   </tr>
 
 
@@ -109,7 +109,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk20-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk20-emo3.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk20-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk20-emo3.wav"></audio></center></td>
   </tr>  
  
 
@@ -118,7 +118,7 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-disc-200iter/spk20-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight05-my-optm-init-weights-freeze-enc-disc-900iter/spk20-emo4.wav"></audio></center></td>
-	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-fixed-pitch-dur/spk20-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight-1epoch-fac001-my-optm-disc-200iter-pitch-dur-lossX2/spk20-emo4.wav"></audio></center></td>
   </tr>
 </table>
 
