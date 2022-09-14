@@ -15,6 +15,7 @@
 <b><font size="3"><b>Baseline model: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
 <b><font size="3"><b>Model 3:        Weight of adversarial loss=0.7, Discriminator trained every 200 iterations</font></b></br>
 <b><font size="3"><b>Model 4:        Weight of adversarial loss=0.7, Discriminator trained every 200 iterations, initialize weights and freeze encoder and duration predictor</font></b></br>
+<b><font size="3"><b>Model 5:        Weight of adversarial loss=0.7, Discriminator trained every 200 iterations, initialize weights and freeze encoder and duration predictor (200k iterations)</font></b></br>
 
 </br>
 </br>
@@ -31,6 +32,7 @@
 	<th>Baseline model</th>
     <th>Model 3</th>
     <th>Model 4</th>	
+	<th>Model 5</th>	
   </tr>
   
   
@@ -39,6 +41,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk17-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk17-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk17-emo1.wav"></audio></center></td>
+  
   </tr>  
   
     <tr>	
@@ -46,6 +50,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk17-emo2.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk17-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk17-emo2.wav"></audio></center></td>
+	
 
   </tr> 
   
@@ -54,6 +60,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk17-emo3.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk17-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk17-emo3.wav"></audio></center></td>
+	
 
   </tr> 
     <tr>	
@@ -61,6 +69,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk17-emo4.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk17-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk17-emo4.wav"></audio></center></td>
+	
 
   </tr> 
   
@@ -80,6 +90,7 @@
 	<th>Baseline model</th>
     <th>Model 3</th>
     <th>Model 4</th>	
+    <th>Model 5</th>	
   </tr>
   
   
@@ -88,6 +99,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk20-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk20-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk20-emo1.wav"></audio></center></td>
+
   </tr>  
   
   
@@ -96,6 +109,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo2.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk20-emo2.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk20-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk20-emo2.wav"></audio></center></td>
+	
 
   </tr>  
   
@@ -105,6 +120,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk20-emo3.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk20-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk20-emo3.wav"></audio></center></td>
+	
   </tr>  
   
   
@@ -113,6 +130,8 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo4.wav"></audio></center></td>
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter/spk20-emo4.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/spk20-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-200iter-init-weight-freeze-dec-dur/200k/spk20-emo4.wav"></audio></center></td>
+	
   </tr>  
     
   
