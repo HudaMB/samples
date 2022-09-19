@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	table, th, td {	border: 1px solid black;}
+	</style>
+	</head>
+<body>
+
+</br>
+<b><font size="5">Fastspeech2 with adverserial trainiong for emotional speech </font></b>
+</br>
+</br>
+</br>
+
+
+<b><font size="3" >Baseline model: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
+
+<b><font size="3" >Model 3:Weight of: adversarial loss=0.5,KL-Loss=0.0001, Discriminator trained every 400 iterations, <font color = "red"> initialize weights</font>, and Encoder and Discriminator conditioned on 2 embedding</font> </b></br>
+
+<b><font size="3">Model 4:Weight of: adversarial loss=0.5,KL-Loss=0.0001, Discriminator trained every 400 iterations, Encoder and Discriminator conditioned on 2 embedding </font></b></br>
+
+<b><font size="3">Model 5:Weight of: adversarial loss=0.5,KL-Loss=0.0001, Discriminator trained every 400 iterations, Encoder,  <font color = "red">Decoder</font> and Discriminator conditioned on 2 embedding </font></b></br>
+
+</br>
+</br>
+
+
+
+<b><font size="4"><b><u>Samples for speaker 17:</font></b></u>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model</th>
+    <th>Model 3</th>
+    <th>Model 4</th>	
+    <th>Model 5</th>
+
+  </tr>
+  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-ref1-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk17-ref1-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref1-emo1.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref1-emo1.wav"></audio></center></td>
+		
+  </tr>  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-ref2-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk17-ref2-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref2-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref2-emo2.wav"></audio></center></td>	
+		
+  </tr>  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-ref3-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk17-ref3-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref3-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref3-emo3.wav"></audio></center></td>	
+		
+  </tr>
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-ref4-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk17-ref4-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref4-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk17-ref4-emo4.wav"></audio></center></td>	
+		
+  </tr>  
+  
+  
+</table>
+
+
+</br>
+</br>
+<b><font size="4"><b><u>Samples for speaker 20:</font></b></u>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model</th>
+
+    <th>Model 3</th>
+    <th>Model 4</th>	
+    <th>Model 5</th>	
+
+  </tr>
+  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-ref1-emo1.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk20-ref1-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref1-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref1-emo1.wav"></audio></center></td>
+
+		
+  </tr>  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-ref2-emo2.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk20-ref2-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref2-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref2-emo2.wav"></audio></center></td>
+	
+		
+
+  </tr>  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-ref3-emo3.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk20-ref3-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref3-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref3-emo3.wav"></audio></center></td>
+	
+		
+  </tr>
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-ref4-emo4.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-init-weights-adv-weight05-kl-weight0001-disc-400iter/spk20-ref4-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref4-emo4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./spke-emo-cond-enc-dec-disc-adv-weight05-kl-weight0001-disc-400iter/spk20-ref4-emo4.wav"></audio></center></td>
+	
+		
+  </tr>  
+  
+   
+  
+</table>
+
+
+
+</body>
+</html>
