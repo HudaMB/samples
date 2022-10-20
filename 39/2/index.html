@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	table, th, td {	border: 1px solid black;}
+	</style>
+	</head>
+<body>
+
+</br>
+<b><font size="5">Fastspeech2 with adverserial trainiong for emotional speech </font></b>
+</br>
+</br>
+</br>
+<b><font size="3"><b>Baseline model1: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
+
+<b><font size="3"><b>Model 1: Weight of adversarial loss=0.7, Discriminator trained every 700 iterations, initilize only encoder and post pitch predictor, freeze both except last layer of ecoder, use two losses for post pitch predictor,  and Encoder, Decoder and Discriminator are conditioned on 2 embedding  </font></b></br>
+</br>
+</br>
+
+
+
+<b><font size="4"><b><u>Samples for speaker 17:</font></b></u>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model1</th>
+	<th>Baseline model2</th>
+    <th>Model 1</th>
+	
+  </tr>
+  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk17-emo1.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0017_000728.wav"></audio></center></td>
+
+
+  </tr>  
+
+ 
+   <tr>	
+	<td><center><audio controls><source src="./gt/17-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk17-emo2.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0017_000378.wav"></audio></center></td>
+
+  </tr>
+  
+   <tr>	
+	<td><center><audio controls><source src="./gt/17-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk17-emo3.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0017_001078.wav"></audio></center></td>
+
+
+  </tr>
+  
+ <tr>	
+	<td><center><audio controls><source src="./gt/17-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk17-emo1.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0017_001428.wav"></audio></center></td>
+
+
+  </tr>
+
+
+  
+</table>
+
+
+</br>
+</br>
+<b><font size="4"><b><u>Samples for speaker 20:</font></b></u>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model1</th>
+	<th>Baseline model2</th>
+    <th>Model 1</th>
+	
+	
+  </tr>
+  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk20-emo1.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0020_000728.wav"></audio></center></td>
+
+	
+  </tr>  
+
+ 
+   <tr>	
+	<td><center><audio controls><source src="./gt/20-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk20-emo2.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0020_000378.wav"></audio></center></td>
+
+	
+  </tr>
+  
+   <tr>	
+	<td><center><audio controls><source src="./gt/20-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk20-emo3.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0020_001078.wav"></audio></center></td>
+
+
+  </tr>
+  
+ <tr>	
+	<td><center><audio controls><source src="./gt/20-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/spk20-emo1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/spk20-emo1.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./esd-norm-loss-1step-weight07-my-optm-disc-700iter-init-freeze-BL4-weight-ppitch-enc-except-last-cond-enc-dec-disc-2loss/0020_001428.wav"></audio></center></td>
+
+
+  </tr>
+
+
+ 
+
+ 
+</table>
+
+
+
+</body>
+</html>
