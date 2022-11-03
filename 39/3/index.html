@@ -13,9 +13,12 @@
 </br>
 </br>
 <b><font size="3"><b>Baseline model1: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
+</br>
 <b><font size="3"><b>Baseline model2: Fastspeech2 + speaker and emotion embedding</font></b></br>
-
-<b><font size="3"><b>Model 1: Weight of adversarial loss=0.5, Discriminator trained every 700 iterations, initilize weights of fastspeech2 and and post pitch predictor, freeze post pitch predictor, adversarial loss only for post pitch predictor,  and Encoder, Decoder and Discriminator are conditioned on 2 embedding  </font></b></br>
+</br>
+<b><font size="3"><b>Model 1: Weight of adversarial loss=0.5, Discriminator trained every 700 iterations, initilize Fastspeech2 and post pitch predictor, freeze post pitch predictor, adversarial loss for post pitch predictor output,  and Encoder, Decoder and Discriminator are conditioned on 2 embedding  </font></b></br>
+</br>
+<b><font size="3"><b>Model 2: Weight of adversarial loss=0.5, Discriminator trained every 1500 iterations, initilize Fastspeech2 and post pitch predictor, freeze post pitch predictor, adversarial loss for post pitch predictor output,  and Encoder, Decoder and Discriminator are conditioned on 2 (exactly same) embedding  </font></b></br>
 </br>
 </br>
 
@@ -31,7 +34,7 @@
 	<th>Baseline model1</th>
 	<th>Baseline model2</th>
     <th>Model 1</th>
-	
+    <th>Model 2</th>	
   </tr>
   
   
@@ -40,6 +43,9 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo1.wav"></audio></center></td>
 	<td><center><audio controls><source src="./with-embeds-only/spk17-emo1.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0017_000728.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0017_000728.wav"></audio></center></td>
+
 
 
   </tr>  
@@ -51,6 +57,8 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk17-emo2.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0017_000378.wav"></audio></center></td>
 
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0017_000378.wav"></audio></center></td>
+
   </tr>
   
    <tr>	
@@ -58,7 +66,9 @@
 	<td><center><audio controls><source src="./with-VAE-embeds/spk17-emo3.wav"></audio></center></td>
 	<td><center><audio controls><source src="./with-embeds-only/spk17-emo3.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0017_001078.wav"></audio></center></td>
-
+	
+	
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0017_001078.wav"></audio></center></td>
 
   </tr>
   
@@ -68,7 +78,7 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk17-emo1.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0017_001428.wav"></audio></center></td>
 
-
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0017_001428.wav"></audio></center></td>
   </tr>
 
 
@@ -88,7 +98,7 @@
 	<th>Baseline model1</th>
 	<th>Baseline model2</th>
     <th>Model 1</th>
-	
+    <th>Model 2</th>	
 	
   </tr>
   
@@ -99,7 +109,8 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk20-emo1.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0020_000728.wav"></audio></center></td>
 
-	
+
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0020_000728.wav"></audio></center></td>	
   </tr>  
 
  
@@ -109,6 +120,7 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk20-emo2.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0020_000378.wav"></audio></center></td>
 
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0020_000378.wav"></audio></center></td>
 	
   </tr>
   
@@ -118,7 +130,7 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk20-emo3.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0020_001078.wav"></audio></center></td>
 
-
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0020_001078.wav"></audio></center></td>
   </tr>
   
  <tr>	
@@ -127,6 +139,7 @@
 	<td><center><audio controls><source src="./with-embeds-only/spk20-emo1.wav"></audio></center></td>	
 	<td><center><audio controls><source src="./13esd-norm-loss-1step-weight05-my-optm-disc-700iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix frame lvl/0020_001428.wav"></audio></center></td>
 
+	<td><center><audio controls><source src="./15esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-all-weights-BL4-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond/0020_001428.wav"></audio></center></td>
 
   </tr>
 
