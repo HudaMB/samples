@@ -12,9 +12,9 @@
 </br>
 </br>
 
-<b><font size="3">Baseline model1: Fastspeech2 + VAE + speaker and emotion embedding</font></b></br>
+<b><font size="3">Baseline model1: Fastspeech2 + VAE + speaker and emotion embedding(BL$)</font></b></br>
 </br>
-<b><font size="3">Baseline model2: Fastspeech2 + speaker and emotion embedding</font></b></br>
+<b><font size="3">Baseline model2: Fastspeech2 + speaker and emotion embedding (BL2)</font></b></br>
 </br>
 <b><font size="3">Model 1: adve loss weight=0.5, Discriminator trained every 1500 iters, Initilize Fastspeech with BL2 </font></b>
 </br>
@@ -25,9 +25,10 @@
 <b><font size="3">Model 3: adve loss weight=0.7, Discriminator trained every 500 iters, Initilize Fastspeech with BL4 </font></b>
 </br>
 </br>
-<b><font size="3">Model 4: adve loss weight=0.7, Discriminator trained every 500 iters, Initilize Fastspeech with BL4, add post pitch loss </font></b>
+<b><font size="3">Model 4: adve loss weight=0.7, Discriminator trained every 500 iters, Initilize Fastspeech with BL4, Freeze encoder except last layer </font></b>
 </br>
 </br>
+
 
 
 
@@ -47,6 +48,7 @@
     <th>Model 2</th>
     <th>Model 3</th>
     <th>Model 4</th>	
+	
 	</tr>
   
   
@@ -58,9 +60,11 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_000728.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_000728.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0017_000728.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0017_000728.wav"></audio></center></td>
+
 	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0017_000728.wav"></audio></center></td>	
 	
   </tr>  
 
@@ -73,9 +77,10 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_000378.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_000378.wav"></audio></center></td>
-	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0017_000378.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0017_000378.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0017_000378.wav"></audio></center></td>
+
 
 
   </tr>
@@ -88,10 +93,11 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_001078.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_001078.wav"></audio></center></td>
-	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0017_001078.wav"></audio></center></td>	
-	
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0017_001078.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0017_001078.wav"></audio></center></td>
+
+
 	
 
   </tr>
@@ -104,9 +110,11 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_001428.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0017_001428.wav"></audio></center></td>
-	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0017_001428.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0017_001428.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0017_001428.wav"></audio></center></td>
+
+
 
   </tr>
 
@@ -129,7 +137,8 @@
     <th>Model 1</th>
     <th>Model 2</th>	
     <th>Model 3</th>
-    <th>Model 4</th>	
+    <th>Model 4</th>
+	<th>Model 5</th>	
   </tr>
   
   
@@ -141,9 +150,11 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_000728.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_000728.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0020_000728.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0020_000728.wav"></audio></center></td>
 	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0020_000728.wav"></audio></center></td>
+
   </tr>  
 
  
@@ -155,9 +166,11 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_000378.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_000378.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0020_000378.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0020_000378.wav"></audio></center></td>
 	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0020_000378.wav"></audio></center></td>
+
 	
   </tr>
   
@@ -169,9 +182,10 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_001078.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_001078.wav"></audio></center></td>
-	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0020_001078.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0020_001078.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0020_001078.wav"></audio></center></td>
+
 
   </tr>
   
@@ -183,9 +197,9 @@
 
 	<td><center><audio controls><source src="./21esd-norm-loss-1step-weight05-my-optm-disc-1500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_001428.wav"></audio></center></td>
 
-	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/0020_001428.wav"></audio></center></td>
-	
-	<td><center><audio controls><source src="./24esd-adv-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div-ppitch-loss/0020_001428.wav"></audio></center></td>
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/2/0020_001428.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./23esd-norm-loss-1step-weight07-my-optm-disc-500iter-init-fast2-BL42-init-freeze-ppitch-cond-enc-dec-disc-fix-embeds-cond-batch-div/3/0020_001428.wav"></audio></center></td>
 
   </tr>
 
