@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	table, th, td {	border: 1px solid black;}
+	</style>
+	</head>
+<body>
+
+</br>
+<b><font size="5">Fastspeech2 with adverserial trainiong and post pitch predictor </font></b>
+</br>
+</br>
+
+<b><font size="3">Baseline model1: Fastspeech2 + VAE + speaker and emotion embedding (BL4)</font></b></br>
+<b><font size="3">Baseline model2: Fastspeech2 + speaker and emotion embedding (BL2)</font></b></br>
+</br>
+<b><font color = "red" ; size="3">Same in all models: adv. loss weight=0.7, Initilize Fastspeech with BL4</font></b></br>
+<b><font size="3">===================================================================</font></b>
+</br>
+<b><font size="3">Model 1: CNN Discriminator(kernel=3,#filters 128) trained every 1000 iters</font></b>
+</br>
+</br>
+<b><font size="3">Model 2: LSTM Discriminator (128 units) trained every 1000 iters</font></b>
+</br>
+</br>
+
+
+
+<b><font size="4"><b><u>Samples for speaker 17:</b></u></font></b>
+</br>
+</br>
+
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model1</th>
+	<th>Baseline model2</th>
+    <th>Model 1</th>
+    <th>Model 2</th>
+
+	</tr>
+  
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/17-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0017_000728.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0017_000728.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./42weight07-disc-conv1-3-128-200iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_000728.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./48weight07-disc-lstm1-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_000728.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0017_000728_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_000728.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_000728.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+ 
+   <tr>	
+	<td><center><audio controls><source src="./gt/17-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0017_000378.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0017_000378.wav"></audio></center></td>>	
+
+	<td><center><audio controls><source src="./42weight07-disc-conv1-3-128-200iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_000378.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./48weight07-disc-lstm1-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_000378.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0017_000378_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_000378.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_000378.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+
+  
+   <tr>	
+	<td><center><audio controls><source src="./gt/17-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0017_001078.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0017_001078.wav"></audio></center></td>
+	<td><center><audio controls><source src="./42weight07-disc-conv1-3-128-200iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_001078.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./48weight07-disc-lstm1-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_001078.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0017_001078_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_001078.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_001078.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+  
+ <tr>	
+	<td><center><audio controls><source src="./gt/17-4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0017_001428.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0017_001428.wav"></audio></center></td>
+	<td><center><audio controls><source src="./42weight07-disc-conv1-3-128-200iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_001428.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./48weight07-disc-lstm1-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss/0017_001428.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0017_001428_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_001428.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0017_001428.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+
+  
+</table>
+
+
+</br>
+</br>
+<b><font size="4"><b><u>Samples for speaker 20:</b></u></font></b>
+</br>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+   <tr>
+	<th>GT</th>
+	<th>Baseline model1</th>
+	<th>Baseline model2</th>
+    <th>Model 1</th>
+    <th>Model 2</th>
+   
+	
+	</tr>
+  
+  <tr>	
+	<td><center><audio controls><source src="./gt/20-1.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0020_000728.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0020_000728.wav"></audio></center></td>
+	<td><center><audio controls><source src="./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000728.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000728.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0020_000728_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000728.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000728.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+
+ 
+   <tr>	
+	<td><center><audio controls><source src="./gt/20-2.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0020_000378.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0020_000378.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000378.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000378.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0020_000378_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000378.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_000378.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+
+   <tr>	
+	<td><center><audio controls><source src="./gt/20-3.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0020_001078.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0020_001078.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001078.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001078.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0020_001078_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001078.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001078.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+  
+ <tr>	
+	<td><center><audio controls><source src="./gt/20-4.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-VAE-embeds/0020_001428.wav"></audio></center></td>
+	<td><center><audio controls><source src="./with-embeds-only/0020_001428.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001428.wav"></audio></center></td>
+	
+	<td><center><audio controls><source src="./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001428.wav"></audio></center></td>
+	
+	</tr> 
+  
+   <tr>	
+
+
+	<td><center><a href="" onclick="window.open('./gt/gt_info/0020_001428_gt.png','w1','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+
+	<td><center><a href="" onclick="window.open('','targetWindow' ,'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+
+	<td><center><a href="" onclick="window.open('','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+	<td><center><a href="" onclick="window.open('./52weight07-disc-conv1-3-128-1000iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001428.png','w2','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 	
+
+	<td><center><a href="" onclick="window.open('./51weight07-disc-lstm1-128-1500iter-init-fast2-BL42-init-freeze-ppitch9-cond3-2embeds-no-ppitch-loss-fixLR/0020_001428.png','w3','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1100px, height=550px, top=100px left=120px'); return false;">click here</a> </center></td> 
+	
+	
+
+  </tr>
+ 
+
+ 
+</table>
+
+
+
+</body>
+</html>
