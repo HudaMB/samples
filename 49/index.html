@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	table, th, td {	border: 1px solid black;}
+	</style>
+	</head>
+<body>
+
+<b><font size="3">GT: Groun Truth</font></b>
+</br>
+<b><font size="3">Baseline model1: Fastspeech2 + speaker and emotion embedding (BL2)</font></b>
+</br>
+<b><font size="3">Baseline model2: Fastspeech2 + VAE + speaker and emotion embedding (BL42)</font></b>
+</br>
+</br>
+<b><font size="3">Model 1: 1 Discriminator and 2 classifiers, train Discriminators every 20000 iterations, adv-weight=0.5, batch=16</font></b></font></b>
+</br>
+</br>
+<b><font size="3">Model 2: 1 Discriminators and 2 classifiers, train GAN Gradient Penalty,  adv-weight=0.3, batch=16</font></b></font></b>
+</br>
+</br>
+<b><font size="3">Model 3: 2 Discriminators and 2 classifiers,no BL or classifiers initialization, train Discriminators every 3000 iterations, adv-weight=0.5, batch=64</font></b></font></b>
+</br>
+</br>
+<b><font size="3">Model 4: 2 Discriminators and 2 classifiers, train Discriminators every 3000 iterations, adv-weight=0.5, batch=16</font></b></font></b>
+</br>
+</br>
+<b><font size="3">Model 5: 2 Disc and 2 class, BL is FS2+VAE+embedding(BL42),train Discriminators every 5000 iterations,  Freeze VAE, adv-weight=0.5, batch 16</font></b></font></b>
+</br>
+</br>
+
+
+
+
+</br>
+<b><font size="4"><b><u>speaker 11:</b></u></font></b>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+  
+  <tr>	
+
+	<td><center><font size="4">Happy</font></center></td>	
+	<td><center><audio controls><source src="./GT/0011_000751.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0011_000751.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./1/0011_000751.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0011_000751.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0011_000751.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0011_000751.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0011_000751.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./5/0011_000751.wav"></audio></center></td>
+  </tr>  
+
+  
+</table>
+
+</br>
+<b><font size="4"><b><u>speaker 12:</b></u></font></b>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+  
+ 
+  <tr>	
+
+	<td><center><font size="4">Surprised</font></center></td>
+	<td><center><audio controls><source src="./GT/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0012_001561.wav"></audio></center></td>
+
+	<td><center><audio controls><source src="./1/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0012_001561.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0012_001561.wav"></audio></center></td>	
+  </tr>  
+  
+</table>
+
+</br>
+<b><font size="4"><b><u>speaker 13:</b></u></font></b>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+  
+
+
+  <tr>	
+
+	<td><center><font size="4">Angry</font></center></td>	
+	<td><center><audio controls><source src="./GT/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0013_000390.wav"></audio></center></td>	
+	
+	<td><center><audio controls><source src="./1/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0013_000390.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0013_000390.wav"></audio></center></td>	
+  </tr>  
+
+ 
+</table>
+
+
+</br>
+<b><font size="4"><b><u>speaker 14:</b></u></font></b>
+</br>
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+      <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>
+	<th>Model4</th>			
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  	
+
+	<td><center><font size="4">Surprised</font></center></td>
+	<td><center><audio controls><source src="./GT/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./1/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0014_001625.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0014_001625.wav"></audio></center></td>
+  </tr>  
+  
+</table>
+
+
+</br>
+<b><font size="4"><b><u>speaker 15:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  	
+
+	<td><center><font size="4">Angry</font></center></td>	
+	<td><center><audio controls><source src="./GT/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0015_000400.wav"></audio></center></td>	
+
+	<td><center><audio controls><source src="./1/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0015_000400.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0015_000400.wav"></audio></center></td>
+  </tr>  
+
+  
+</table>
+
+
+</br>
+<b><font size="4"><b><u>speaker 16:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+
+	<td><center><font size="4">Sad</font></center></td>
+	<td><center><audio controls><source src="./GT/0016_001057.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./BL2/0016_001057.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./1/0016_001057.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0016_001057.wav"></audio></center></td>
+  	<td><center><audio controls><source src="./3/0016_001057.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0016_001057.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0016_001057.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0016_001057.wav"></audio></center></td>	
+  </tr>  
+
+  
+  
+</table>
+
+
+
+</br>
+<b><font size="4"><b><u>speaker 17:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>			
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+
+	<td><center><font size="4">Happy</font></center></td>	
+	<td><center><audio controls><source src="./GT/0017_000993.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./BL2/0017_000993.wav"></audio></center></td>
+	<td><center><audio controls><source src="./1/0017_000993.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0017_000993.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0017_000993.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0017_000993.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./BL42/0017_000993.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0017_000993.wav"></audio></center></td>
+  </tr>  
+
+  
+  
+</table>
+
+
+</br>
+<b><font size="4"><b><u>speaker 18:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>
+	<th>Model4</th>			
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+
+	<td><center><font size="4">Sad</font></center></td>	
+	<td><center><audio controls><source src="./GT/0018_001342.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./BL2/0018_001342.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./1/0018_001342.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0018_001342.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0018_001342.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0018_001342.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0018_001342.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./5/0018_001342.wav"></audio></center></td>
+  </tr>  
+
+ 
+  
+</table>
+
+</br>
+<b><font size="4"><b><u>speaker 19:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+
+	<td><center><font size="4">Surprised</font></center></td>
+	<td><center><audio controls><source src="./GT/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./1/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0019_001730.wav"></audio></center></td>
+	<td><center><audio controls><source src="./5/0019_001730.wav"></audio></center></td>	
+  </tr>  
+  
+</table>
+
+
+</br>
+<b><font size="4"><b><u>speaker 20:</b></u></font></b>
+</br>
+
+<table style="border-collapse: collapse; border: none; width:100%">
+ 
+    <tr>
+	<th>Emotion</th>
+	<th>GT</th>	
+	<th>Baseline1</th>
+	<th>Model1</th>
+	<th>Model2</th>
+	<th>Model3</th>	
+	<th>Model4</th>		
+	<th>Baseline2</th>	
+	<th>Model5</th>	
+	</tr>
+  
+
+	<td><center><font size="4">Sad</font></center></td>	
+	<td><center><audio controls><source src="./GT/0020_001142.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL2/0020_001142.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./1/0020_001142.wav"></audio></center></td>
+	<td><center><audio controls><source src="./2/0020_001142.wav"></audio></center></td>
+	<td><center><audio controls><source src="./3/0020_001142.wav"></audio></center></td>
+	<td><center><audio controls><source src="./4/0020_001142.wav"></audio></center></td>
+	<td><center><audio controls><source src="./BL42/0020_001142.wav"></audio></center></td>	
+	<td><center><audio controls><source src="./5/0020_001142.wav"></audio></center></td>
+  </tr>  
+
+  
+</table>
+
+
+
+
+
+
+</body>
+</html>
